@@ -1,1 +1,112 @@
-Initializing
+# Repolex Knowledge Graph of zopefoundation/zope.contenttype
+
+RDF knowledge graph data for [zopefoundation/zope.contenttype](https://github.com/zopefoundation/zope.contenttype), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download zopefoundation/zope.contenttype
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 057f50a48d685b64b87851b8ab175f3e9ad963a5
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 057f50a48d685b64b87851b8ab175f3e9ad963a5
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 0a43f5b335cf664cb26b98c15b0a2fea95587a25.nq.gz
+│   ├── 2596a596db536ea35996d5d7cabb3da57d8bb7d0.nq.gz
+│   ├── 266023ccabc10848a280f96719d84851a49af4fa.nq.gz
+│   ├── 43d0dd6350531eb09a9c565fb63057bb1861e88c.nq.gz
+│   ├── 500c4d55d6236996f2e063c48ca87fc7cc327670.nq.gz
+│   ├── 513c07b28f6d5b8084ea290925d32e37905658e0.nq.gz
+│   ├── 56fecdb72a75c4118ba880431beb7a936ff2cef0.nq.gz
+│   ├── 665260d9bfad60aa9556d67747b894fa7a2cf1ca.nq.gz
+│   ├── 79859e06010bf4967c5b4b044afea6ef39742938.nq.gz
+│   ├── 7c091b21a4038db6ef41de1f6dc5c0126e17c927.nq.gz
+│   ├── 816631b3d8dab23c7e28bd97b0aec2c8450ee4fa.nq.gz
+│   ├── 8455fee8348a969cad47db73368f2029d41b8cb0.nq.gz
+│   ├── 8a1cde635fcfe005cc4438d504940505395236a7.nq.gz
+│   ├── 8dcb7282e84a43b154e2d053e1d7e185b4428d08.nq.gz
+│   ├── 9514bc4ffb8b14a6d8c5990d187a591127cc51a3.nq.gz
+│   ├── 9a9c86c38e74cbd63b96556408c18f417377b475.nq.gz
+│   ├── 9d3601981a9bc04900d7f7ebbe337b8b85b6a6b5.nq.gz
+│   ├── b44c7f73084e2574f696e5fd4f9aa96746a0a883.nq.gz
+│   ├── b8651654fbaec50e51e01884b13eed625b41131a.nq.gz
+│   ├── bd0908ec50da9fb8434ce1c19c14b77beab53c7c.nq.gz
+│   ├── bd1ccb12d40d07b09e8cc9704db772fd0dbe4d89.nq.gz
+│   ├── c0da525a6c2bf0ef8a2768d36e9bf1fe0d3dd79a.nq.gz
+│   ├── ca517f4eb0cec1c691c0c2b54cd5eb85e906f11b.nq.gz
+│   ├── d96b0fe2983c0a4cc20f6fd696bc04ecaed4f6a8.nq.gz
+│   ├── d9e113ec685b92b018297dd2f200341d1fba01f9.nq.gz
+│   ├── dc4646478618e59528361966d8cf1c79493c729f.nq.gz
+│   ├── dd13cc7338ba9fd2fcc6828e04b73e2e45cc55ae.nq.gz
+│   ├── e1f9ad7b3b48377bfbfaa1b380c384ddea24060f.nq.gz
+│   ├── e3579011e1a5792ed2adb52fe79f1ac001b9c3bf.nq.gz
+│   ├── e4b867329e05886a4818f86b117fca2102bc84bf.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── eb4f53b6e4eaaa1d4062bf1b40c4100d4afb388b.nq.gz
+│   └── f81cabf053fb4487bb3496afbc276556076bc3f2.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 057f50a48d685b64b87851b8ab175f3e9ad963a5.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 41 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[zopefoundation/zope.contenttype](https://github.com/zopefoundation/zope.contenttype)
+
+---
+*Parsed on 2026-11-02 by [repolex](https://repolex.ai)*
