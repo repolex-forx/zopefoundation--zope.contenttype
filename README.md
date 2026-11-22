@@ -36,20 +36,33 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 .
 ├── aggregate
 │   ├── ast
-│   │   └── 057f50a48d685b64b87851b8ab175f3e9ad963a5
+│   │   ├── 057f50a48d685b64b87851b8ab175f3e9ad963a5
+│   │   │   └── chunk-001.nq.gz
+│   │   └── d1e5274c2738a53acc9d8e78804f483d0a443f58
 │   │       └── chunk-001.nq.gz
+│   ├── lsp
+│   │   └── d1e5274c2738a53acc9d8e78804f483d0a443f58.nq.gz
 │   └── repolex
-│       └── 057f50a48d685b64b87851b8ab175f3e9ad963a5
+│       ├── 057f50a48d685b64b87851b8ab175f3e9ad963a5
+│       │   └── chunk-001.nq.gz
+│       └── d1e5274c2738a53acc9d8e78804f483d0a443f58
 │           └── chunk-001.nq.gz
 ├── blob
+│   ├── 034043e1628b277e8c3805e50acd2ac1e6e85255.nq.gz
 │   ├── 0a43f5b335cf664cb26b98c15b0a2fea95587a25.nq.gz
+│   ├── 0ab12fe1e0c8eb6cb0d68fce1b14a2209cdb0def.nq.gz
+│   ├── 1f321f52abb7db6f79c285bab56e2852dc575699.nq.gz
 │   ├── 2596a596db536ea35996d5d7cabb3da57d8bb7d0.nq.gz
 │   ├── 266023ccabc10848a280f96719d84851a49af4fa.nq.gz
+│   ├── 3a01e3f7e0c5a34d114938c2bcf1cf79dd136c07.nq.gz
 │   ├── 43d0dd6350531eb09a9c565fb63057bb1861e88c.nq.gz
+│   ├── 4be3878d933cd215b1300f6eef91850b7f14b3db.nq.gz
 │   ├── 500c4d55d6236996f2e063c48ca87fc7cc327670.nq.gz
 │   ├── 513c07b28f6d5b8084ea290925d32e37905658e0.nq.gz
 │   ├── 56fecdb72a75c4118ba880431beb7a936ff2cef0.nq.gz
+│   ├── 5f5787e37d41b3e3c2e7bd2947b1ce87f7e2c4e0.nq.gz
 │   ├── 665260d9bfad60aa9556d67747b894fa7a2cf1ca.nq.gz
+│   ├── 717bb607f8a664ec726e9216cbe5c07025598268.nq.gz
 │   ├── 79859e06010bf4967c5b4b044afea6ef39742938.nq.gz
 │   ├── 7c091b21a4038db6ef41de1f6dc5c0126e17c927.nq.gz
 │   ├── 816631b3d8dab23c7e28bd97b0aec2c8450ee4fa.nq.gz
@@ -59,12 +72,16 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   ├── 9514bc4ffb8b14a6d8c5990d187a591127cc51a3.nq.gz
 │   ├── 9a9c86c38e74cbd63b96556408c18f417377b475.nq.gz
 │   ├── 9d3601981a9bc04900d7f7ebbe337b8b85b6a6b5.nq.gz
+│   ├── a78ef8e93e20951709df85d0f2b0a72ac7bf9fb7.nq.gz
 │   ├── b44c7f73084e2574f696e5fd4f9aa96746a0a883.nq.gz
 │   ├── b8651654fbaec50e51e01884b13eed625b41131a.nq.gz
 │   ├── bd0908ec50da9fb8434ce1c19c14b77beab53c7c.nq.gz
 │   ├── bd1ccb12d40d07b09e8cc9704db772fd0dbe4d89.nq.gz
 │   ├── c0da525a6c2bf0ef8a2768d36e9bf1fe0d3dd79a.nq.gz
+│   ├── c5508b9f083362a81185d598327e7801d837cb18.nq.gz
 │   ├── ca517f4eb0cec1c691c0c2b54cd5eb85e906f11b.nq.gz
+│   ├── ccdedc28073a0ba8303c52c91284a4e7e70bb471.nq.gz
+│   ├── ceadc23bfdedcebdf30491e12f1f69493915fdbc.nq.gz
 │   ├── d96b0fe2983c0a4cc20f6fd696bc04ecaed4f6a8.nq.gz
 │   ├── d9e113ec685b92b018297dd2f200341d1fba01f9.nq.gz
 │   ├── dc4646478618e59528361966d8cf1c79493c729f.nq.gz
@@ -72,15 +89,23 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   ├── e1f9ad7b3b48377bfbfaa1b380c384ddea24060f.nq.gz
 │   ├── e3579011e1a5792ed2adb52fe79f1ac001b9c3bf.nq.gz
 │   ├── e4b867329e05886a4818f86b117fca2102bc84bf.nq.gz
+│   ├── e6568bf0654425ece5bc1fbc7793e23a4c0f14f9.nq.gz
 │   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e6ed8920ce57a3c5b8bbf0e5c2028d822dfaef01.nq.gz
 │   ├── eb4f53b6e4eaaa1d4062bf1b40c4100d4afb388b.nq.gz
-│   └── f81cabf053fb4487bb3496afbc276556076bc3f2.nq.gz
+│   ├── f0ed9d001e553f388470f3a0b5eca7e9269311c7.nq.gz
+│   ├── f2315be002695c9306ce1ec0ab3625e08899e55e.nq.gz
+│   ├── f81cabf053fb4487bb3496afbc276556076bc3f2.nq.gz
+│   └── f8d9b9454e72c14900b07c92b87be9619dd4360f.nq.gz
 ├── branch
 │   └── branch.nq.gz
 ├── commit
 │   └── commit.nq.gz
+├── dep
+│   └── d1e5274c2738a53acc9d8e78804f483d0a443f58.nq.gz
 ├── filetree
-│   └── 057f50a48d685b64b87851b8ab175f3e9ad963a5.nq.gz
+│   ├── 057f50a48d685b64b87851b8ab175f3e9ad963a5.nq.gz
+│   └── d1e5274c2738a53acc9d8e78804f483d0a443f58.nq.gz
 ├── issue
 │   └── issue.nq.gz
 ├── pr
@@ -88,7 +113,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 └── tag
     └── tag.nq.gz
 
-13 directories, 41 files
+17 directories, 62 files
 ```
 
 | Directory | What it contains |
@@ -109,4 +134,4 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 [zopefoundation/zope.contenttype](https://github.com/zopefoundation/zope.contenttype)
 
 ---
-*Parsed on 2026-11-02 by [repolex](https://repolex.ai)*
+*Parsed on 2026-11-22 by [repolex](https://repolex.ai)*
